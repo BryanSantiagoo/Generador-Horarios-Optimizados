@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Generador de Horarios</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Horarios</h1>
+        <form action="{{ url_for('index') }}" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="num_materias">Número de materias:</label>
+                <input type="number" id="num_materias" name="num_materias" min="1" max="6" required>
+            </div>
+            <div class="form-group">
+                <label for="restriccion">Restricción de horario:</label>
+                <select id="restriccion" name="restriccion" required>
+                    <option value="0">Mañana</option>
+                    <option value="1">Tarde</option>
+                    <option value="2">Híbrido</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dia_libre">Día libre:</label>
+                <select id="dia_libre" name="dia_libre" required>
+                    <option value="0">Sin restricción</option>
+                    <option value="1">Lunes</option>
+                    <option value="2">Martes</option>
+                    <option value="3">Miércoles</option>
+                    <option value="4">Jueves</option>
+                    <option value="5">Viernes</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="categoria">Categoría de materias:</label>
+                <select id="categoria" name="categoria" required>             
+                    <option value="1">Sistemas</option>
+                    <option value="2">Industrial</option>
+                    <option value="3">En común</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="materias">Selecciona las materias (máximo 6):</label>
+                <select id="materias" name="materias" multiple >
+                    {% for materia in materias %}
+                        <option value="{{ materia[0] }}">{{ materia[1] }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="button-group">
+                <button type="submit" name="generar_horario" class="btn btn-primary">Generar Horario</button>
+            </div>
+        </form>
+
+        {% if materias %}
+            <h2>Materias Filtradas:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Categoría</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for materia in materias %}
+                        <tr>
+                            <td>{{ materia[0] }}</td>
+                            <td>{{ materia[1] }}</td>
+                            <td>{{ materia[2] }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% endif %}
+
+        {% if schedule %}
+        <h2>Horario Generado:</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in schedule %}
+                    <tr>
+                        {% for cell in row %}
+                            <td class="{% if cell %}filled-cell{% else %}empty-cell{% endif %}">
+                                {% if cell %}
+                                    {{ cell }}
+                                {% else %}
+                                    Tiempo libre
+                                {% endif %}
+                            </td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endif %}
+    </div>
+</body>
+</html>

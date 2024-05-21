@@ -1,0 +1,72 @@
+,EN COM�N,
+,C�DIGO,ASIGNATURA
+1,1000004-B,Calculo diferencial
+2,1000005-B,"Calculo Integral"
+3,2015734,"Programacion de computadores"
+4,1000003-B,Algebra lineal
+5,2016375,"Programacion orientada a objetos"
+6,1000006-B,"Calculo en varias variables"
+7,2015701,"Gerencia y gestion de proyectos"
+8,1000017-B,"Fundamentos de electricidad y magnetismo"
+9,2025969,Modelos y simulacion
+10,2025970,Optimizacion
+11,2025968,"Modelos estocasticos y simulacion en computacion y comunicaciones"
+12,1000019-B,Fundamentos de mecanica
+,SISTEMAS,
+,C�DIGO,ASIGNATURA
+13,2025975,"Introduccion a la ingenieria de sistemas y computacion"
+14,2016703,"Pensamiento sistemico"
+15,1000089-B,"Catedra nacional de induccion y preparacion para la vida universitaria"
+16,2025963," Matematicas discretas I"
+17,2016353,Bases de datos
+18,2016698,"Elementos de computadores"
+19,2025964,"Matematicas discretas II"
+20,2016699,Estructuras de datos
+21,2016697,"Arquitectura de computadores"
+22,2025967,"Redes de computadores"
+23,2016701,"Ingenieria de software I"
+24,2015174,"Introduccion a la teoria de la computacion"
+25,2015970,Metodos Numericos
+26,2025982,"Sistemas de informacion"
+27,2016702,"Ingenieria de software II"
+28,2016696,Algoritmos
+29,2016707,Sistemas operativos
+30,2025994,"Teoria de la Informacion y Sistemas de Comunicaciones"
+31,2016716,"Arquitectura de software"
+32,2025966,"Lenguajes de programacion"
+33,2025995,"Introduccion a los sistemas inteligentes"
+34,2016722,"Computacion paralela y distribuida"
+35,2025960,Computacion visual
+36,2024045,"Taller de proyectos interdisciplinarios"
+37,2025983,"Arquitectura de infraestructura y gobierno de TICs"
+38,2025972,"Criptografia y seguridad de la informacion"
+39,2015703,"Ingenieria economica"
+40,1000013-B,"Probabilidad y estadistica"
+,INDUSTRIAL,
+,C�DIGO,ASIGNATURA
+41,2015811,"Sociologia especial: industrial y del trabajo"
+42,2026805,"Introduccion a la ingenieria industrial"
+43,2016615,"Taller de invencion y creatividad"
+44,2016592,"Economia general"
+45,2026488,"Taller de herramientas y problemas en Ingenieria Industrial"
+46,2027877,"Probabilidad fundamental"
+47,1000007-B,"Ecuaciones diferenciales"
+48,2016610,"Sistema de costos"
+49,2015702,Gerencia y gestion de proyectos
+50,2025993,"Taller de ciencia y tecnologia de materiales"
+51,2025986,"Ingenieria economica y analisis de riesgo"
+52,2016619,"Taller de procesos quimicos ybiotecnologicos"
+53,2016618,"Taller de procesosmetalmecanicos"
+54,2027878,"Inferencia estadistica fundamental"
+55,2016741,Finanzas
+56,2016613,"Taller de ergonomia e ingenieria de metodos"
+57,2016589,"Control y gestion de calidad"
+58,2025988,"Taller desimulacion de procesos de manufactura y sistemas de servicios"
+59,2025982,"Sistemas de informacion"
+60,2016609,Seguridad industrial
+61,2016614,"Taller de ingenieria de la produccion"
+62,2016616,"Taller de metodologia de la investigacion"
+63,2016605,Logistica
+64,2016600,Gestion tecnologica
+65,2015701,Gerencia de recursos humano
+66,2016612,Taller de diseno de plantas
